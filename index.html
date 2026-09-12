@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Chaniya Choli — Catalog</title>
+<meta name="description" content="Chaniya Choli catalog — codes, rates and availability." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <span class="mark">CC</span>
+      <span class="brand-code">EST. CATALOG</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <p class="hero-kicker">Wholesale rate card</p>
+      <h1 class="hero-title">Chaniya Choli</h1>
+      <p class="hero-sub">Festive sets, priced and stocked for the season. Every piece below is checked and ready to move.</p>
+      <div class="hero-rule" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <section class="catalog" aria-label="Product catalog">
+      <div class="catalog-head">
+        <h2>Current stock</h2>
+        <span class="count" id="item-count"></span>
+      </div>
+
+      <div class="grid" id="product-grid">
+        <!-- cards injected by script.js -->
+      </div>
+    </section>
+
+    <section class="enquire" id="enquire">
+      <div class="enquire-card">
+        <h2>Place an order</h2>
+        <p>Quote the item code when you reach out — it keeps things quick.</p>
+        <div class="enquire-actions">
+          <a class="btn btn-primary" href="https://wa.me/910000000000" id="whatsapp-link">Message on WhatsApp</a>
+          <a class="btn btn-ghost" href="mailto:orders@example.com" id="email-link">Email us</a>
+        </div>
+        <p class="enquire-note">Update the phone number and email in <code>script.js</code> before you share this site.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <span>Chaniya Choli</span>
+      <span class="dim">Rates in ₹, per piece. Subject to change without notice.</span>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
