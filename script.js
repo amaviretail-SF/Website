@@ -1,6 +1,6 @@
 // ---- Edit your contact details here ----
-const WHATSAPP_NUMBER = "910000000000"; // include country code, no + or spaces
-const CONTACT_EMAIL = "orders@example.com";
+const WHATSAPP_NUMBER = "919106578260"; // include country code, no + or spaces
+const CONTACT_EMAIL = "amaviretail@gmail.com";
 
 // ---- Product data (from your spreadsheet) ----
 // To add/edit items, just add or change entries in this list.
@@ -21,7 +21,7 @@ const PRODUCTS = [
   },
   {
     code: "Ram-192",
-    driveId: "19havyx8FVEvwxjiosUo4jSzRlebgq590",
+    driveId: "https://drive.google.com/file/d/1zMgwyUFKG59boG_9L68SoGUxuu9aSVZ0/view?usp=sharing",
     rate: 1449,
     availability: "Ready",
   },
