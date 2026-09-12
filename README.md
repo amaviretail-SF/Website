@@ -1,20 +1,24 @@
-# Chaniya Choli catalog site
+# Super Fashion — catalog site
 
-A simple static site — no build step, no framework needed.
+Multi-page static site, no build step needed.
 
-## Files
-- `index.html` — page structure
-- `styles.css` — all styling
-- `script.js` — product data + rendering. **Edit this file to add/change items or update your WhatsApp number and email.**
+## Pages
+- `index.html` — Home, with a preview of each category
+- `chaniya-choli.html`, `fusion.html`, `mens.html` — full category pages
+- `styles.css` — shared styling for every page
 
-## Run locally
-Just open `index.html` in a browser, or run a tiny local server:
-```
-npx serve .
-```
+Every page has the same left sidebar: a Home button at the top, then links
+to each category. Product photos are baked into the pages (as base64), so
+there's no dependency on Google Drive staying accessible.
+
+## Adding items later
+Photos are embedded in the generated HTML, so the easiest way to add or
+edit products is to tell Claude the new item (name, price, availability,
+photo) and ask it to regenerate the page — or, if editing by hand, search
+for the `<article class="card">` blocks in the relevant page and copy the
+pattern.
 
 ## Deploy to Vercel
-See the deployment steps Claude gave you in chat. Short version:
-1. Push this folder to a GitHub repo.
-2. Go to vercel.com/new, import that repo, click Deploy.
-3. Framework preset: "Other" (no build command needed).
+1. Push this folder to a GitHub repo (all files, including styles.css).
+2. Go to vercel.com/new, import the repo, Framework Preset "Other", Deploy.
+3. Your site goes live at a *.vercel.app link, with index.html as the homepage automatically.
